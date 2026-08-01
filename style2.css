@@ -1,0 +1,70 @@
+/* Reset Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+}
+
+/* 1. FLEXBOX: Untuk Navigasi Sebaris */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo di kiri, menu di kanan */
+  align-items: center; /* Rata tengah secara vertikal */
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Jarak antar menu */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 2. CSS GRID: Untuk Layout Utama (2 Dimensi/Kolom) */
+.main-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Konten 75%, Sidebar 25% */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content,
+.sidebar {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* 3. FLEXBOX: Untuk Komponen di Dalam Grid */
+.card {
+  display: flex;
+  flex-direction: column; /* Menyusun isi kartu ke bawah */
+  align-items: flex-start; /* Rata kiri */
+  gap: 15px; /* Jarak vertikal antar elemen */
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.card-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

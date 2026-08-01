@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: flex;
+        background-color: brown;
+      }
+
+      .container div {
+        background-color: aqua;
+        padding: 10px;
+        margin: 20px;
+        font-size: large;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+
+      .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* membuat 4 kolom dengan ukuran sams berjajar satu sama lain */
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      /* layout responsif - membuat 2 kolom alih alih 4 kolom */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* layout responsif - membuat 2 kolom bertumpuk dari atas satu sama lain alih alih berdampingan */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="display: flex; justify-content: center">Gallery</h1>
+    <div style="display: flex; justify-content: center; align-items: center">
+      <a href="index.html">
+        <button>Beranda</button>
+      </a>
+      <a href="tentang.html">
+        <button>Tentang</button>
+      </a>
+      <a href="kontak.html">
+        <button>Kontak</button>
+      </a>
+    </div>
+    <br />
+    <br />
+    <div style="display: flex; align-items: center; justify-content: center">
+      <img
+        src="img/mountain.jpg"
+        alt="gunung"
+        style="border-radius: 10px; width: 150px; height: 150px"
+      />
+      <span style="margin-left: 15px"></span>
+      <img
+        src="img/gempa_bumi.jpg"
+        alt="gempa"
+        width="150"
+        height="150"
+        style="border-radius: 10px"
+      />
+      <span style="margin-left: 15px"></span>
+      <img
+        src="img/covid.jpg"
+        alt="covid"
+        width="150"
+        height="150"
+        style="border-radius: 10px"
+      />
+      <span style="margin-left: 15px"></span>
+      <img
+        src="img/gunung.jpg"
+        alt="gunung"
+        width="150"
+        height="150"
+        style="border-radius: 10px"
+      />
+      <span style="margin-left: 15px"></span>
+      <img
+        src="img/tsunami.jpg"
+        alt="tsunami"
+        width="150"
+        height="150"
+        style="border-radius: 10px"
+      />
+      <a href="https://www.google.com">
+        <img
+          src="img/star.gif"
+          alt="star"
+          style="border-radius: 10px; width: 150px; height: 150px"
+        />
+      </a>
+    </div>
+
+    <div class="container">
+      <div>Item1</div>
+      <div>Item2</div>
+      <div>Item3</div>
+      <div>Item4</div>
+      <div>Item5</div>
+    </div>
+
+    <div class="container2">
+      <div class="column">
+        <img src="img/covid.jpg" alt="covid" style="width: 100%" />
+        <img src="img/gempa_bumi.jpg" alt="covid" style="width: 60%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 80%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 100%" />
+        <img src="img/meeting.jpg" alt="covid" style="width: 100%" />
+        <img src="img/mountain.jpg" alt="covid" style="width: 100%" />
+        <img src="img/tsunami.jpg" alt="covid" style="width: 80%" />
+      </div>
+      <div class="column">
+        <img src="img/covid.jpg" alt="covid" style="width: 100%" />
+        <img src="img/gempa_bumi.jpg" alt="covid" style="width: 85%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 100%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 85%" />
+        <img src="img/meeting.jpg" alt="covid" style="width: 100%" />
+        <img src="img/mountain.jpg" alt="covid" style="width: 80%" />
+        <img src="img/gempa_bumi.jpg" alt="covid" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="img/covid.jpg" alt="covid" style="width: 100%" />
+        <img src="img/gempa_bumi.jpg" alt="covid" style="width: 100%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 100%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 80%" />
+        <img src="img/meeting.jpg" alt="covid" style="width: 100%" />
+        <img src="img/mountain.jpg" alt="covid" style="width: 70%" />
+        <img src="img/gunung.jpg" alt="covid" style="width: 100%" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  /* agar total element tidak berubah karena ukuran layar */
+}
+
+.container {
+  display: grid;
+  /* untuk membuat tampilan menjadi grid */
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  /* membuat template kolom berulang 12 bernama col-start totalnya 1fr */
+  gap: 20px;
+  /* selisih antar kolom 20px */
+}
+
+nav ul {
+  list-style: none;
+  /* untuk menghilangkan icon didepan list */
+  margin: 0;
+  padding: 0;
+}
+
+.container > * {
+  background-color: antiquewhite;
+  padding: 10px;
+  border: 2px solid limegreen;
+  /* membuat semua item didalam container memiliki border 2px lurus hijau */
+  grid-column: col-start / span 12;
+  /* membuat semua item di container memiliki kolom */
+}
+
+.header {
+  color: red;
+}
+
+@media (min-width: 576px) {
+  /* @media untuk membuat minimal layar dengan lebar 576 keatas akan berubah tampilannya */
+  .sidebar {
+    grid-column: col-start / span 3;
+    /* membuat item sidebar menjadi kolom dimulai dari kolom 1 dan span(menjangkau) 3 kolom */
+    grid-row: 3;
+    /* membuat item sidebar berawal dari row(baris) ke 3 */
+  }
+
+  .ads {
+    grid-column: col-start / span 3;
+    /* membuat item iklan menjadi kolom dimulai dari kolom 1 dan span(menjangkau) 3 kolom */
+  }
+  .content,
+  .footer {
+    grid-column: col-start 4 / span 9;
+    /* membuat item footer menjadi kolom dimulai dari kolom 4 dan span(menjangkau) 9 kolom */
+  }
+  nav ul {
+    display: flex;
+    /* membuat list di navbar menjadi flex atau bisa horizontal maupun vertikal */
+    justify-content: space-between;
+    /* membuat tata letak list navbar menjadi rata kanan kiri */
+  }
+}
+
+@media (min-width: 768px) {
+  /* @media membuat minimal lebar layar 768 keatas berubah tampilannya */
+  .nav {
+    grid-column: col-start / span 2;
+    /* membuat item nav menjadi kolom dimulai dari kolom 1 dan span(menjangkau) 2 kolom */
+    grid-row: 2 / 4;
+    /* membuat item navigasi dan diawali dari baris ke 2 dan span(menjangkau) 4 kolom */
+  }
+  .content {
+    grid-column: col-start 3 / span 8;
+    /* membuat item content menjadi kolom dimulai dari kolom 3 dan span(menjangkau) 8 kolom */
+    grid-row: 2 / 4;
+    /* membuar item content menjadi baris dimulai dari baris 2 dan span (menjangkau 4 baris) */
+  }
+  .sidebar {
+    grid-column: col-start 11 / span 2;
+    /* membuat item sidebar menjadi kolom dimulai dari kolom 11 dan span(menjangkau) 2 kolom */
+  }
+
+  .ads {
+    grid-column: col-start 11 / span 2;
+    /* membuat item ads menjadi kolom dimulai dari kolom 11 dan span(menjangkau) 2 kolom */
+  }
+
+  .footer {
+    grid-column: col-start / span 12;
+    /* membuat item footer menjadi kolom dimulai dari kolom 1 dan span(menjangkau) 12 kolom */
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* membuat arah navigasi menjadi kolom atau vertikal */
+  }
+}

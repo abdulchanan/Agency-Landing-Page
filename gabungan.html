@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabungan Grid dan Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR (Menggunakan Flexbox) -->
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- LAYOUT UTAMA (Menggunakan CSS Grid) -->
+    <div class="main-layout">
+      <!-- Konten Utama -->
+      <main class="content">
+        <h2>Artikel Terbaru</h2>
+
+        <!-- KARTU KONTEN (Menggunakan Flexbox) -->
+        <div class="card">
+          <h3>Judul Artikel</h3>
+          <p>
+            Ini adalah deskripsi singkat artikel yang sangat menarik untuk
+            dibaca pengguna.
+          </p>
+          <button class="card-btn">Baca Selengkapnya</button>
+        </div>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Sidebar</h3>
+        <p>Iklan atau link populer.</p>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  background-color: antiquewhite;
+}
+
+p {
+  background-color: blueviolet;
+  font-family: monospace;
+  border: 2px solid red;
+  padding: 20px;
+  margin: 20px;
+  background-image: url("img/chanan.jpeg");
+}
+
+h2 {
+  color: brown;
+  font-family: "Courier New", Courier, monospace;
+}

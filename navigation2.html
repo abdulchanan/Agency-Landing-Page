@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigasi</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+      .navbar {
+        display: flex;
+        background-color: green;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: lightgreen;
+        color: black;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .side {
+        flex: 25%;
+        background-color: lightgrey;
+        padding: 20px;
+      }
+
+      .main {
+        flex: 75%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .fakeimg {
+        width: 100%;
+        padding: 20px;
+        background-color: gray;
+      }
+
+      @media screen and (max-width: 700px) {
+        .container,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="#">Lowongan Pekerjaan</a>
+      <a href="#">Gallery</a>
+      <a href="#">Profil</a>
+    </div>
+
+    <div class="container">
+      <div class="side">
+        <h2>About me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height: 200px">Image</div>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          facilis a aspernatur tenetur? Quidem, perspiciatis adipisci fugit
+          consequuntur officiis possimus blanditiis optio fuga ad temporibus sit
+          a fugiat officia vitae!
+        </p>
+        <h3>More me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut
+          magnam pariatur illum veniam repudiandae voluptatum enim, iste
+          architecto recusandae minus vitae eaque culpa? Architecto omnis
+          distinctio necessitatibus cum rerum.
+        </p>
+        <div class="fakeimg" style="height: 60px">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">Image</div>
+        <br />
+        <div class="fakeimg" style="height: 60px">Image</div>
+      </div>
+      <div class="main">
+        <h2>JUDUL HALAMAN</h2>
+        <p>judul halaman, 27 Juli 2026</p>
+        <div class="fakeimg">Image</div>
+        <p>SOME TEXT</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, earum
+          aliquam. Eum aspernatur hic rerum doloremque totam blanditiis deleniti
+          fugit? Ducimus architecto ratione earum natus eligendi doloremque enim
+          molestias minima.
+        </p>
+        <br />
+        <h2>JUDUL HALAMAN</h2>
+        <p>judul halaman, 27 Juli 2026</p>
+        <div class="fakeimg">Image</div>
+        <p>SOME TEXT</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, earum
+          aliquam. Eum aspernatur hic rerum doloremque totam blanditiis deleniti
+          fugit? Ducimus architecto ratione earum natus eligendi doloremque enim
+          molestias minima.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

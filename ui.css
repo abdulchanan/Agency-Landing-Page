@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+/* desain bagian header  */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.header > h2 a {
+  color: rgb(0, 81, 255);
+  text-decoration: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav ul li a:hover {
+  color: blue;
+}
+
+.nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight: bold;
+}
+
+ul > li {
+  margin: 10px;
+  padding: 6px;
+  text-decoration: none;
+}
+
+/* =============== */
+/* desain bagian hero */
+.hero {
+  /* membuat bagian hero menjadi flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, lightblue, rgb(0, 132, 255));
+  text-align: center;
+  height: 50vh;
+  margin: 20px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+}
+
+.box > a {
+  /* agar tinggi dan lebar bisa diatur */
+  display: inline-block;
+  width: 30%;
+  background-color: rgb(3, 91, 255);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: transform 0.5s;
+  text-decoration: none;
+}
+.box > a:hover {
+  background-color: rgb(2, 56, 92);
+  transform: translate(0, -5px);
+}
+
+/* desain bagian Service */
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr 4fr;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  height: auto;
+  margin: 20px;
+  gap: 20px;
+  background-color: rgb(238, 238, 238);
+}
+
+.service > .card {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.5s;
+}
+
+.service > .card:hover {
+  /* membuat efek hover bergerak dan dipanggil di parent atasnya */
+  background-color: rgb(231, 231, 109);
+  transform: translate(0, -10px);
+}
+
+/* membuat judul service menjadi diatas */
+.service h1 {
+  grid-column: 1 / span 3;
+  font-weight: bolder;
+}
+
+/* desain bagian Portofolio */
+.portofolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  margin: 20px;
+  padding: 5px;
+  font-family: "poppins", sans-serif;
+}
+
+.portofolio > * {
+  height: 80%;
+  width: 20%;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.4s;
+}
+.portofolio > *:hover {
+  background-color: gray;
+  transform: translate(0, -10px);
+}
+
+.portofolio > .thumbnail-1 {
+  /* Lapisan warna gelap transparan (wajib 2 warna untuk gradasi rata) agar teks di atas gambar terbaca */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/application.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+.portofolio > .thumbnail-2 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/meeting.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+.portofolio > .thumbnail-3 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/meeting1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+.portofolio > .thumbnail-4 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/meeting2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+/* desain bagian Footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(37, 36, 36);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.copyright {
+  padding: 5px;
+  height: auto;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.social-media > a > img {
+  height: 30px;
+  width: 30px;
+}
+
+.social-media > * {
+  padding: 5px;
+}
